@@ -11,49 +11,43 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
         <header class="clearfix">
             <h1>jQuery Form Validation Example</h1>
         </header>
-
         <main>
-            <h3>Enquiry Form</h3>
-
-            <form class="contact-form" action="send-mail.php" method="post">
-                <div class="clearfix">
-                    <label for="name">&nbsp;</label>
-                    <p class="status">Message goes Here</p>
-                </div>
-                <div class="clearfix">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" autofocus>
-                </div>
-                <div class="clearfix">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Your Email">
-                </div>
-                <div class="clearfix">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </div>
-                <div>
-                    <label>&nbsp;</label>
-                    <input type="reset" value="Reset">
-                    <input type="submit" value="Send">
-                </div>
-                <input id="spam" class="hidden" name="spam" type="text">
-            </form>
+        <h3>Enquiry Form</h3>
+        <form class="contact-form" action="send-mail.php" method="post">
+            <div class="clearfix">
+                <label>&nbsp;</label>
+                <p class="status"></p>
+            </div>
+            <div class="clearfix">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" autofocus>
+            </div>
+            <div class="clearfix">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="clearfix">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send">
+            </div>
+            <input id="spam" class="hidden" name="spam" type="text">
+        </form>
         </main>
-
         <footer>
             <p>&copy; Media Design School 2014</p>
         </footer>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/jquery.formvalidation.js"></script>
-
+        <script src="js/main.js"></script>
     </body>
 </html>

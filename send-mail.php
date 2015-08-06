@@ -12,8 +12,8 @@ $subject = "Website Enquiry";
 	
 //set email body and headers
 $body = $message."\n\n";
-$body.= $name."<$email>";
-$headers = "From: $name<$email>";
+$body.= $name." <$email>";
+$headers = "From: $name <$email>";
 
 //send email
 if(mail(RECIPIENT, $subject, $body, $headers)){	
